@@ -106,16 +106,34 @@ section {
 
 .home {
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-size: cover;
-    /* background-image: url(/img/arvor1.jpeg); */
+    background: #242221;
     background-position: 'center';
     display: flex;
     align-items: center;
     justify-content: flex-start;
 
+    display: grid;
+    grid-template-columns: repeat(2, 2fr
+    );
+
 }
+.container_laft {
+    text-align: center;
+    order: 2;
+}
+
+
+.container_laft img {
+    max-width: 530px;
+    height: 700px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+
 
 .slide {
     margin-bottom: 2rem;
@@ -632,6 +650,19 @@ services */
     .home-tex {
         height: 87vh;
     }
+
+    .home {
+     
+       
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    
+        display: grid;
+        grid-template-columns: repeat(1, 2fr
+        );
+    
+    }
 }
 
 
@@ -657,10 +688,30 @@ services */
     .Contatos {
         grid-template-columns: 1fr;
     }
+
+    .home {
+     
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr
+        );
+    
+    }
 }
 
 
 @media (max-width: 820px) {
+    .home { 
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr
+        );
+    
+    }
 
     #menu-icon {
         display: flex;
