@@ -17,6 +17,9 @@
 
 </head>
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 <body>
 
     <!-- header -->
@@ -24,9 +27,9 @@
         <a href="#" class="logo">Creat<span>Portfo</span>lio</a>
         <ul class="navlist">
             <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">Sobre-mim</a></li>
+            <li><a href="#about">sobre mim</a></li>
             <li><a href="#services">Serviços</a></li>
-            <li><a href="#portfolio">Portofoilio</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
             <li><a href="#Contato">Cantatos</a></li>
         </ul>
 
@@ -39,19 +42,23 @@
 
     <section class="home" id="home">
         <div class="home-tex">
-            <div class="slide">
+            <div class="slide" data-aos="fade-right">
                 <span class="one">Hola!!!</span>
                 <span class="two">Eu sou</span>
 
             </div>
-            <h2>Q.Cristiano</h2>
-            <h3>UI/UX <span>Desenvolvedor</span></h3>
-            <p>
-                Nós, desenvolvedores com mais de 1 ano de experiência, que fazem com que os clientes voltem para obter
-                informações sobre os serviços, fazemos o melhor esforço.
-            </p>
+            <div data-aos="fade-left">
 
-            <div class="button">
+                <h2>Q.Cristiano</h2>
+                <h3>UI/UX <span>Desenvolvedor</span></h3>
+                <p>
+                    Nós, desenvolvedores com mais de 1 ano de experiência, que fazem com que os clientes voltem para
+                    obter
+                    informações sobre os serviços, fazemos o melhor esforço.
+                </p>
+            </div>
+
+            <div class="button" data-aos="fade-right">
                 <button class="btn">Diga olá</button>
 
                 <div class="social-media">
@@ -78,7 +85,7 @@
 
         </div>
 
-        <div class="container_laft">
+        <div class="container_laft" data-aos="fade-up">
             <img src="/img/quizito.png" alt="">
         </div>
 
@@ -87,11 +94,11 @@
     <!-- about -->
 
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="fade-up">
             <img src="./img/Abima.png" alt="">
 
         </div>
-        <div class="about-text">
+        <div class="about-text" data-aos="fade-down">
             <h2>Sobre <span>Me</span></h2>
 
             <h4>Creat UI/UX<span>Developer</span></h4>
@@ -114,13 +121,13 @@
 
     <section class="services" id="services">
 
-        <div class="main-text">
-            <p>What I am Expert In </p>
+        <div class="main-text" data-aos="fade-down">
+
             <h2><span>Meu</span>Serviços</h2>
         </div>
 
         <div class="services-contente">
-            <div class="box">
+            <div class="box" data-aos="fade-right">
                 <div class="S-icons">
                     <i class='bx bx-mobile-alt'></i>
                 </div>
@@ -136,7 +143,7 @@
                 <a href="#" class="read "> Read More</a>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <div class="S-icons">
                     <i class='bx bx-code-alt'></i>
                 </div>
@@ -153,7 +160,7 @@
                 <a href="#" class="read "> Read More</a>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-left">
                 <div class="S-icons">
                     <i class='bx bx-edit-alt'></i>
                 </div>
@@ -174,13 +181,12 @@
     </section>
 
     <!-- Portofoilio -->
-    <div class="portfolio" id="portfolio">
+    <div class="portfolio" id="portfolio" data-aos="fade-up">
         <div class="main-text">
-            <p>Meu Portofoilio </p>
             <h2><span>Projetor Mais</span> Recente</h2>
         </div>
 
-        <div class="portfolio-contente">
+        <div class="portfolio-contente" data-aos="zoom-in">
             <div class="row-img">
                 <img src="/img/quizito.png" alt="">
 
@@ -277,21 +283,23 @@
 
     <section class="Contatos" id="Contato">
         <div class="Contato-text">
+            <div data-aos="fade-right">
 
-            <h2>Cntre em <span>Contato conosco</span></h2>
-            <h4>Se você tiver algum projeto em sua mente.</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempore nesciunt tempora minima soluta in eligendi pariatur
+                <h2>Cntre em <span>Contato conosco</span></h2>
+                <h4>Se você tiver algum projeto em sua mente.</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Tempore nesciunt tempora minima soluta in eligendi pariatur
 
-            </p>
-            <div class="list">
+                </p>
+            </div>
+            <div class="list" data-aos="fade-right">
                 <a href="#"> +5541997610748</a>
                 <a href="#">quizitocristiano@gmail.com</a>
                 <a href="#">quizitoCristianoAgostinho</a>
 
             </div>
-            <div class="contato-icons">
+            <div class="contato-icons" data-aos="fade-left">
                 <a href="#">
                     <i class='bx bxl-whatsapp'></i>
                 </a>
@@ -311,7 +319,7 @@
         </div>
 
         <div class="contato-form">
-            <form action="">
+            <form action="" data-aos="fade-down">
                 <input type="name" placeholder="Digite o seu nome" required>
 
                 <input type="email" placeholder="Digite o seu email" required>
@@ -343,6 +351,11 @@
         </div>
     </section>
     <script src="/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, })
+    </script>
 </body>
 
 </html>

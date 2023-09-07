@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -37,7 +38,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-
+  
     padding: 22px 15%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
@@ -114,7 +115,9 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
+    background-image: url(./img/bgcolor.jpeg) ;
+    background-size: cover;
+    background-position: center;
     display: grid;
     grid-template-columns: repeat(2, 2fr
     );
